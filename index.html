@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KHUSHBU RESTAURANT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header with Logo -->
+    <header class="hero">
+        <img src="logo.png" alt="Khushbu Restaurant Logo" class="logo">
+        <img src="pexels-chanwalrus-958545.jpg" alt="Restaurant Background" class="hero-image">
+        <h1 class="hero-text">KHUSHBU RESTAURANT</h1>
+        <h2 class="zero-text">“Where Every Bite Tells a Story.”</h2>
+        <h3 class="one-text">Location: Karad-415110, Satara</h3>
+    </header>
+
+    <!-- Menu Section -->
+    <section class="menu">
+        <h2><u>WELCOME TO THE RESTAURANT</u></h2>
+
+        <div class="menu-item">
+            <h3>Starter Menu:</h3>
+            <select id="starter">
+                <option>Mounchow Soup</option>
+                <option>Chicken 65</option>
+                <option>Masala Papad</option>
+                <option>Paneer Chilli</option>
+                <option>Chicken Tandoori</option>
+            </select>
+        </div>
+
+        <div class="menu-item">
+            <h3>Main Course:</h3>
+            <select id="main-course">
+                <option>Dal Tadka</option>
+                <option>Paneer Lababdar</option>
+                <option>Baby Corn Mushroom Kadhai</option>
+                <option>Chicken Handi</option>
+            </select>
+        </div>
+
+        <div class="menu-item">
+            <h3>Dessert:</h3>
+            <select id="dessert">
+                <option>Ras Malai</option>
+                <option>Jalebi</option>
+                <option>Rasgulla</option>
+                <option>Gulab Jamun</option>
+                <option>Pastry</option>
+            </select>
+        </div>
+
+        <div class="menu-item">
+            <h3>Bread's:</h3>
+            <select id="bread">
+                <option>Butter Kulcha</option>
+                <option>Roti</option>
+                <option>Chapati</option>
+                <option>Naan</option>
+            </select>
+        </div>
+
+        <div class="menu-item">
+            <h3>Drink:</h3>
+            <select id="drink">
+                <option>Beer</option>
+                <option>Vodka</option>
+                <option>Prathamesh</option>
+                <option>Water</option>
+            </select>
+        </div>
+
+        <input class="submit" type="button" value="Submit Order" onclick="placeOrder()">
+    </section>
+
+    <!-- Order Summary Section -->
+    <section id="order-summary" style="display:none;">
+        <h2>Your Order Summary</h2>
+        <ul id="order-list"></ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
